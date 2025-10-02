@@ -11,7 +11,6 @@ import ContactForm from "./components/ContactForm";
 // ✅ Import images from /src/assets
 import AbayImg from "../src/assets/abay.png"; // ✅ correct if App.jsx is in /src
 import BunaMarImg from "../src/assets/BunaMar.png";
-import SomeImg from "../src/assets/image.png";
 import MailSvg from "../src/assets/mail.svg";
 import LogoSvg from "../src/assets/z-logo.svg";
 import ZynLogo from "../src/assets/zyn-logo.svg";
@@ -19,7 +18,7 @@ import ZynLogo from "../src/assets/zyn-logo.svg";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  const images = [AbayImg, BunaMarImg, SomeImg, MailSvg, LogoSvg, ZynLogo];
+  const images = [AbayImg, BunaMarImg, MailSvg, LogoSvg, ZynLogo];
 
   useEffect(() => {
     const preload = async () => {

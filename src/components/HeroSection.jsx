@@ -1,4 +1,6 @@
 import React from "react";
+import LogoSvg from "../src/assets/z-logo.svg";
+import ZynLogo from "../src/assets/zyn-logo.svg";
 
 function HeroSection() {
   return (
