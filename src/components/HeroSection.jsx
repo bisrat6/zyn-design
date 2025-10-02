@@ -1,6 +1,5 @@
 import React from "react";
-import LogoSvg from "../src/assets/z-logo.svg";
-import ZynLogo from "../src/assets/zyn-logo.svg";
+import ZynLogo from "../assets/zyn-logo.svg";
 
 function HeroSection() {
   return (
@@ -8,7 +7,7 @@ function HeroSection() {
       <div className="hero-content">
         <div className="hero-left">
           <div className="brand-name">
-            <img src="./src/assets/zyn-logo.svg" alt="ZYN" />
+            <img src={ZynLogo} alt="ZYN" />
           </div>
           <p className="hero-description">
           We are a team of passionate creators and problem-solvers, dedicated to turning bold
