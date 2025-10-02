@@ -68,6 +68,15 @@ body {
   --tertiary-color: black;
   --text-gray: #665;
 }
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 20px;
+  color: #8b5e2e;
+}
 /* Header Styles */
 .header {
   position: fixed;
