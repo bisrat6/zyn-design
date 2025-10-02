@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebookF, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-
+import MailSvg from "../assets/mail.svg";
 
 function ContactForm() {
     return (
@@ -11,7 +11,7 @@ function ContactForm() {
           <div className="contact-title">Let's <span>Create Your Dream</span> Space!</div>
           <div className="contact-info-section">
             <div className='contact-info'>
-              <img  className='icon' src='./src/assets/mail.svg' alt='e-mail'/>
+              <img  className='icon' src={MailSvg} alt='e-mail'/>
               <p>
               hello@interiordesignco.com
               </p>

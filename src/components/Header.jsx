@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import LogoSvg from "../assets/z-logo.svg";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,7 @@ function Header() {
   return (
     <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className='logo'>
-      <img src='./src/assets/z-logo.svg' alt='logo'/>
+      <img src={LogoSvg} alt='logo'/>
       </div>
       <nav className="nav">
         <div className="logo">
