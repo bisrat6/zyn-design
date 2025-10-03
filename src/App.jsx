@@ -16,11 +16,14 @@ import BunaMarImg from "../src/assets/BunaMar.png";
 import MailSvg from "../src/assets/mail.svg";
 import LogoSvg from "../src/assets/z-logo.svg";
 import ZynLogo from "../src/assets/zyn-logo.svg";
+import Gym from "../src/assets/gym.jpg";
+import Ela from "../src/assets/ela.png";
+import Lkai from "../src/assets/lkai.png";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
-  const images = [AbayImg, BunaMarImg, MailSvg, LogoSvg, ZynLogo];
+  const images = [AbayImg, BunaMarImg, MailSvg, LogoSvg, ZynLogo, Gym, Ela, Lkai];
 
   useEffect(() => {
     const preload = async () => {

@@ -13,12 +13,11 @@ function StatsCard() {
   return (
     <div className="stats-card">
       <p className="stats-description">
-        Kingsguard protect him, and word eventually spreads that Rhaegar's heir
-        is alive.
+        Delivering quality work and building lasting relationships with every client.
       </p>
       <div className="stats-numbers">
-        <Stats statNum={"150+"} label={"Completed Projects"} />
-        <Stats statNum={"35+"} label={"Happy Clients"} />
+        <Stats statNum={"20+"} label={"Completed Projects"} />
+        <Stats statNum={"20+"} label={"Happy Clients"} />
       </div>
     </div>
   );

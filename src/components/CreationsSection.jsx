@@ -18,7 +18,7 @@ function CreationsSection() {
       image: BunaMarImg,
       alt: "Buna Mar",
       description:
-        "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
+        "The Bio Lab Interior: A clean, modern aesthetic infused with natural warmth. White walls, wooden accents, and soft lighting are complemented by potted plants and amber-toned details. A central bar area with sleek seating and display shelves creates a functional yet inviting space, subtly enhanced with brand identity.",
     },
     {
       name: "ABAY",
@@ -26,7 +26,7 @@ function CreationsSection() {
       image: AbayImg,
       alt: "Abay TV",
       description:
-        "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
+        "Modern Broadcast Studio Design: A sophisticated space for Abay Radio and HFI News, featuring sleek circular lighting, integrated branding, and strategic illumination. The design balances contemporary aesthetics with optimal acoustic functionality for professional broadcasting.",
     },
     {
       name: "GYM",
@@ -34,7 +34,7 @@ function CreationsSection() {
       image: Gym,
       alt: "Gym",
       description:
-        "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
+        "Dynamic Gym Interior Design: A functional and inspiring space combining robust equipment layouts with motivating aesthetics. Industrial lighting, custom wall graphics, and a durable material palette create an energetic environment for focused workouts.",
     },
     {
       name: "ELA",
@@ -42,15 +42,15 @@ function CreationsSection() {
       image: Ela,
       alt: "Ela TV",
       description:
-        "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
+        "A sleek and collaborative workspace that balances functionality with modern design. Featuring open workstations, bold branding, and a welcoming reception, the office fosters creativity, productivity, and innovation.",
     },
     {
-      name: "LKAI",
-      highlight: "COFFEE",
+      name: "OLKAI",
+      highlight: "COFFEE ROASTERS",
       image: Lkai,
-      alt: "LKAI TV",
+      alt: "OLKAI TV",
       description:
-        "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
+        "A cozy and modern coffee shop designed with natural textures, warm lighting, and open layouts. The space blends comfort with sophistication, creating the perfect atmosphere to enjoy coffee and connection.",
     },
   ];
 
