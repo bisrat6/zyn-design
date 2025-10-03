@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import {
   faInstagram,
   faFacebookF,
-  faTelegram,
+  faXTwitter,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import MailSvg from "../assets/mail.svg";
@@ -21,7 +21,7 @@ function ContactForm() {
           <ContactInfo contactInfo={"yohaniswendu1234@gmail.com"}>
             <img className="icon" src={MailSvg} alt="e-mail" />
           </ContactInfo>
-          <ContactInfo contactInfo={"123 Harmony St, Addis Ababa, Ethiopia"}>
+          <ContactInfo contactInfo={" Addis Ababa, Ethiopia"}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-2 w-6 icon"
@@ -69,7 +69,7 @@ function ContactForm() {
             </a>
 
             <a
-              href="https://facebook.com/yourpage"
+              href="https://web.facebook.com/profile.php?id=61581597875603"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -77,11 +77,11 @@ function ContactForm() {
             </a>
 
             <a
-              href="https://twitter.com/yourpage"
+              href="https://x.com/zyn_interior"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faTelegram} />
+              <FontAwesomeIcon icon={faXTwitter} />
             </a>
 
             <a

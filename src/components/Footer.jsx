@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faFacebookF,
-  faTelegram,
+  faXTwitter,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -24,7 +24,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://facebook.com/yourpage"
+          href="https://web.facebook.com/profile.php?id=61581597875603"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,11 +32,11 @@ function Footer() {
         </a>
 
         <a
-          href="https://twitter.com/yourpage"
+          href="https://x.com/zyn_interior"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faTelegram} />
+          <FontAwesomeIcon icon={faXTwitter} />
         </a>
 
         <a
