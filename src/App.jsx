@@ -7,6 +7,8 @@ import WhatWeDoSection from "./components/WhatWeDoSection";
 import CreationsSection from "./components/CreationsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
+import { BeatLoader } from "react-spinners";
 
 // ✅ Import images from /src/assets
 import AbayImg from "../src/assets/abay.png"; // ✅ correct if App.jsx is in /src
@@ -35,11 +37,16 @@ function App() {
       );
       setLoading(false);
     };
-    preload();
+     preload();
   }, []);
 
   if (loading) {
-    return <div className="preloader">Loading...</div>; // Add spinner styling here
+    return (
+      <div className="preloader">
+        <img src="./src/assets/z-logo.svg" alt="logo" />
+        <BeatLoader color="red" size={20} />
+      </div>
+    );
   }
 
   return (
@@ -51,6 +58,7 @@ function App() {
       <CreationsSection />
       <TestimonialsSection />
       <ContactForm />
+      <Footer />
     </div>
   );
 }
