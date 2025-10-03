@@ -7,16 +7,16 @@ function WhatWeDoSection() {
       text: "Crafting homes that reflect your personality and lifestyle,balancing comfort with style.",
     },
     {
-      title: "INTERIOR CONSULTATION",
-      text: "Crafting homes that reflect your personality and lifestyle,balancing comfort with style.",
+      title: "HOSPITALITY DESIGN",
+      text: " Hotels, restaurants and lounges with guest-centric flow and identity.",
     },
     {
       title: "RESIDENTIAL DESIGN",
-      text: "Crafting homes that reflect your personality and lifestyle, balancing comfort with style.",
+      text: "Full-service, from concept to design; kitchens, living rooms, whole-home schemes.",
     },
     {
       title: "COMMERCIAL DESIGN",
-      text: "Crafting homes that reflect your personality and lifestyle,balancing comfort with style.",
+      text: " Offices, retail and showrooms that reflect brand and boost productivity.",
     },
   ];
   return (

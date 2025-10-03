@@ -6,6 +6,9 @@ import "swiper/css/pagination";
 
 import AbayImg from "../assets/abay.png";
 import BunaMarImg from "../assets/BunaMar.png";
+import Gym from "../assets/gym.jpg";
+import Ela from "../assets/ela.png";
+import Lkai from "../assets/lkai.png";
 
 function CreationsSection() {
   const creationsData = [
@@ -26,18 +29,26 @@ function CreationsSection() {
         "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
     },
     {
-      name: "BUNA",
-      highlight: "MAR",
-      image: BunaMarImg,
-      alt: "Buna Mar",
+      name: "GYM",
+      highlight: "TIME",
+      image: Gym,
+      alt: "Gym",
       description:
         "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
     },
     {
-      name: "ABAY",
+      name: "ELA",
       highlight: "TV",
-      image: AbayImg,
-      alt: "Abay TV",
+      image: Ela,
+      alt: "Ela TV",
+      description:
+        "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
+    },
+    {
+      name: "LKAI",
+      highlight: "COFFEE",
+      image: Lkai,
+      alt: "LKAI TV",
       description:
         "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
     },
