@@ -130,6 +130,19 @@ body {
   padding: 8px 25px;
 }
 
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  transition: 0.3s;
+}
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -609,63 +622,6 @@ body {
   line-height: 1.5;
 }
 
-/* Enhanced responsive design */
-@media (max-width: 1024px) {
-  .hero {
-    padding: 0 40px;
-  }
-
-  .hero-content {
-    gap: 60px;
-  }
-
-  .lower-section {
-    padding: 60px 40px;
-  }
-}
-/* Hamburger button */
-.hamburger {
-  display: none; /* hidden on desktop */
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #000;
-  transition: 0.3s;
-}
-
-/* Show hamburger on mobile */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: rgba(96, 96, 96, 0.8);
-    backdrop-filter: blur(15px);
-    flex-direction: column;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav.open {
-    transform: translateX(0);
-  }
-
-  .nav-link {
-    padding: 15px;
-  }
-}
-
 .hamburger.open .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -677,161 +633,7 @@ body {
 }
 
 /* Extra mobile improvements */
-@media (max-width: 600px) {
-  .logo {
-    width: 32px;
-    margin-bottom: 8px;
-  }
-  .hero {
-    flex-direction: column;
-    height: auto;
-    min-height: 60vh;
-    padding: 0 5px;
-  }
-  .hero-content {
-    margin: 30px 0;
-    gap: 20px;
-    max-width: 100%;
-    grid-template-columns: 1fr;
-  }
-  .brand-name {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-  }
-  .headline-line1 {
-    font-size: 28px;
-    margin-top: 10px;
-  }
-  .hero-description {
-    font-size: 13px;
-    max-width: 95vw;
-  }
-  .contact-btn {
-    padding: 10px 18px;
-    font-size: 15px;
-  }
-  .lower-section {
-    padding: 20px 5px;
-    gap: 15px;
-    grid-template-columns: 1fr;
-    max-width: 100%;
-  }
-  .stats-card,
-  .about-card {
-    padding: 18px;
-    border-radius: 14px;
-  }
-  .stats-numbers {
-    flex-direction: column;
-    gap: 12px;
-  }
-  .stat-number {
-    font-size: 28px;
-  }
-  .about-title {
-    font-size: 18px;
-  }
-  .creations-section {
-    padding: 2rem 0.5rem;
-    max-width: 100%;
-  }
-  .creation-card {
-    padding: 8px;
-    border-radius: 12px;
-  }
-  .creation-image img {
-    height: 120px;
-    border-radius: 12px;
-  }
-  .creation-content {
-    padding: 0.5rem;
-  }
-  .creation-name {
-    font-size: 1rem;
-  }
-  .creation-description {
-    font-size: 0.85rem;
-  }
-  .creation-btn {
-    padding: 0.5rem;
-    right: 0.5rem;
-    bottom: 0.5rem;
-  }
-  .what-section {
-    padding: 2rem 0.5rem;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .what-right {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .testimonials-section {
-    padding: 2rem 0.5rem;
-  }
-  .testimonial-card {
-    padding: 0.8rem;
-    border-radius: 12px;
-  }
-  .testimonial-img {
-    width: 40px;
-    height: 40px;
-  }
-  .contact-container {
-    padding: 10px 2px;
-    gap: 10px;
-    grid-template-columns: 1fr !important;
-    min-height: auto;
-    max-width: 100%;
-  }
-  .contact-content {
-    gap: 8px;
-    padding: 0;
-  }
-  .contact-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.7rem;
-  }
-  .contact-description {
-    font-size: 15px;
-    margin: 1rem 0;
-  }
-  .contact-form-section {
-    padding: 8px;
-    border-radius: 12px;
-  }
-  .contact-form {
-    padding: 10px;
-    gap: 0.4rem;
-  }
-  .contact-form label {
-    font-size: 15px;
-  }
-  .contact-form-input,
-  .contact-form-textarea {
-    font-size: 14px;
-    padding: 6px;
-    border-radius: 8px;
-    height: 40px;
-  }
-  .contact-form-textarea {
-    height: 80px;
-  }
-  .contact-submit-button {
-    padding: 8px;
-    font-size: 15px;
-    border-radius: 8px;
-  }
-  footer {
-    padding: 10px 0;
-    gap: 5px;
-    font-size: 13px;
-  }
-  .contact-social-links > * {
-    font-size: 28px;
-  }
-}
+
 
 .testimonials-section {
   margin: 0 auto;
@@ -1087,6 +889,7 @@ footer {
   color: #4a4a4a;
   text-align: center;
 }
+
 footer .contact-social-links > * {
   color: #4a4a4a;
 }
@@ -1112,6 +915,7 @@ footer .contact-social-links > * {
   .hero-content {
     grid-template-columns: 1fr;
     gap: 40px;
+    text-align: center;
   }
 
   .brand-zyn {
@@ -1143,6 +947,166 @@ footer .contact-social-links > * {
   }
 
   .about-title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 32px;
+    margin-bottom: 8px;
+  }
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-height: 80vh;
+    padding: 0 5px;
+  }
+  .hero-content {
+    margin: 30px 0;
+    gap: 30px;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .hero-left{
+    gap:20px;
+  }
+  .brand-name {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  .headline-line1 {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .hero-description {
+    font-size: 13px;
+    max-width: 95vw;
+    font-weight: 400;
+  }
+  .contact-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+  .lower-section {
+    padding: 20px 5px;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .stats-card,
+  .about-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+  .stats-numbers {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .stat-number {
+    font-size: 28px;
+  }
+  .about-title {
+    font-size: 18px;
+  }
+  .creations-section {
+    padding: 2rem 0.5rem;
+    max-width: 100%;
+  }
+  .creation-card {
+    padding: 8px;
+    border-radius: 12px;
+  }
+  .creation-image img {
+    height: 120px;
+    border-radius: 12px;
+  }
+  .creation-content {
+    padding: 0.5rem;
+  }
+  .creation-name {
+    font-size: 1rem;
+  }
+  .creation-description {
+    font-size: 0.85rem;
+  }
+  .creation-btn {
+    padding: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+  }
+  .what-section {
+    padding: 2rem 0.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .what-right {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .testimonials-section {
+    padding: 2rem 0.5rem;
+  }
+  .testimonial-card {
+    padding: 0.8rem;
+    border-radius: 12px;
+  }
+  .testimonial-img {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-container {
+    padding: 10px 10px !important;
+    gap: 10px;
+    grid-template-columns: 1fr !important;
+    min-height: auto;
+    max-width: 100%;
+  }
+  .contact-content {
+    gap: 8px;
+    padding: 0;
+  }
+  .contact-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .contact-description {
+    font-size: 15px;
+    margin: 1rem 0;
+  }
+  .contact-form-section {
+    padding: 0;
+    border-radius: 12px;
+  }
+  .contact-form {
+    padding: 10px !important;
+    gap: 0.4rem;
+  }
+  .contact-form label {
+    font-size: 15px;
+  }
+  .contact-form-input,
+  .contact-form-textarea {
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 8px;
+    height: 40px;
+  }
+  .contact-form-textarea {
+    height: 80px;
+  }
+  .contact-submit-button {
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  footer {
+    padding: 10px 0;
+    gap: 5px;
+    font-size: 13px;
+  }
+  .contact-social-links > * {
     font-size: 28px;
   }
 }
@@ -1195,5 +1159,53 @@ footer .contact-social-links > * {
 
   .about-title {
     font-size: 24px;
+  }
+  footer .contact-social-links > * {
+  font-size: 20px;
+}
+}
+
+
+/* Enhanced responsive design */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 0 40px;
+  }
+
+  .hero-content {
+    gap: 60px;
+  }
+
+  .lower-section {
+    padding: 60px 40px;
+  }
+}
+
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(96, 96, 96, 0.8);
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav.open {
+    transform: translateX(0);
+  }
+
+  .nav-link {
+    padding: 15px;
   }
 }
