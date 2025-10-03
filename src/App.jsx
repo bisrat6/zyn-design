@@ -43,7 +43,7 @@ function App() {
   if (loading) {
     return (
       <div className="preloader">
-        <img src="./src/assets/z-logo.svg" alt="logo" />
+        <img src={LogoSvg} alt="logo" />
         <BeatLoader color="red" size={20} />
       </div>
     );
