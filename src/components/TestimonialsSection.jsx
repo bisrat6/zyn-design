@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay,Pagination } from 'swiper/modules';  // ✅ import modules
+import { Navigation, Autoplay} from 'swiper/modules'; 
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -36,7 +36,6 @@ function TestimonialsSection() {
         name: "David K.",
         role: "Startup Founder",
       },
-      // add as many as you like here
     ];
   
     return (

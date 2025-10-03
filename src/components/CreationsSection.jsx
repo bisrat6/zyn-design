@@ -12,7 +12,7 @@ function CreationsSection() {
     {
       name: "BUNA",
       highlight: "MAR",
-      image: BunaMarImg, // ← use imported variable
+      image: BunaMarImg,
       alt: "Buna Mar",
       description:
         "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
@@ -20,7 +20,7 @@ function CreationsSection() {
     {
       name: "ABAY",
       highlight: "TV",
-      image: AbayImg, // ← use imported variable
+      image: AbayImg,
       alt: "Abay TV",
       description:
         "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. Combining innovation, design, and technology, we strive to build solutions that simplify life, inspire growth, and connect people to what truly matters.",
