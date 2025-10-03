@@ -35,9 +35,9 @@ function Stats({ statNum, label }) {
 
 function AboutCard() {
   const aboutText1 =
-    "We are a team of passionate creators and problem solvers, turning bold ideas into impactful experiences. By blending innovation, design, and technology, we build solutions that make life easier, encourage growth, and connect people to what matters most.";
+    "We are a team of passionate creators and problem-solvers, dedicated to turning bold ideas into meaningful experiences. At ZYN Interior Design, we blend innovation, design, and craftsmanship to create spaces that not only look extraordinary but also feel effortless to live in.";
   const aboutText2 =
-    "As a team of creators and innovators, we transform bold ideas into meaningful experiences. Through the power of design, innovation, and technology, we craft solutions that simplify everyday life, spark growth, and bring people closer to what truly inspires them.";
+    "Our approach goes beyond aesthetics—we build solutions that simplify life, inspire growth, and connect people to what truly matters. Every project is a collaboration, every detail intentional, and every space a reflection of those who inhabit it.";
 
   return (
     <div className="about-card">
