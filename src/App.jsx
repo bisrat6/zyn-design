@@ -9,38 +9,18 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import { BeatLoader } from "react-spinners";
-
-// ✅ Import images from /src/assets
-import AbayImg from "../src/assets/abay.png"; // ✅ correct if App.jsx is in /src
-import BunaMarImg from "../src/assets/BunaMar.png";
-import MailSvg from "../src/assets/mail.svg";
 import LogoSvg from "../src/assets/z-logo.svg";
-import ZynLogo from "../src/assets/zyn-logo.svg";
-import Gym from "../src/assets/gym.jpg";
-import Ela from "../src/assets/ela.png";
-import Lkai from "../src/assets/lkai.png";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
-  const images = [AbayImg, BunaMarImg, MailSvg, LogoSvg, ZynLogo, Gym, Ela, Lkai];
-
   useEffect(() => {
-    const preload = async () => {
-      await Promise.all(
-        images.map(
-          (src) =>
-            new Promise((resolve) => {
-              const img = new Image();
-              img.src = src;
-              img.onload = resolve;
-              img.onerror = resolve;
-            })
-        )
-      );
+    // Simple loading delay to show the spinner
+    const timer = setTimeout(() => {
       setLoading(false);
-    };
-     preload();
+    }, 1500); // Show spinner for 1.5 seconds
+
+    return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
