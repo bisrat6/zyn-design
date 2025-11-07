@@ -153,16 +153,16 @@ function Contactform() {
       <ContactInput
         className={"contact-form-input"}
         label={"Name"}
-        type="input"
+        type="text"
         placeholder={"ENTER YOUR NAME"}
-        name="name"
+        name="user_name"
       />
       <ContactInput
         className={"contact-form-input"}
         label={"Email"}
-        type="input"
+        type="email"
         placeholder={"ENTER YOUR EMAIL"}
-        name="email"
+        name="user_email"
       />
       <ContactInput
         className={"contact-form-textarea"}
@@ -186,21 +186,21 @@ function ContactInput({ placeholder, className, type, label, name }) {
   return (
     <>
       <label>{label}</label>
-      {type === "input" ? (
-        <input
-          type="text"
-          placeholder={placeholder}
-          className={className}
-          name={name}
-          required
-        />
-      ) : (
+      {type === "textArea" ? (
         <textarea
           placeholder={placeholder}
           className={className}
           name={name}
           required
         ></textarea>
+      ) : (
+        <input
+          type={type === "email" ? "email" : "text"}
+          placeholder={placeholder}
+          className={className}
+          name={name}
+          required
+        />
       )}
     </>
   );
