@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="contact-footer">
       <p>
-        © 2025 Interior Design Co. Crafting spaces that inspire. Follow us on
+        © 2025 ZYN Interior Design. Crafting spaces that inspire. Follow us on
         social media to see our latest projects and ideas.
       </p>
 

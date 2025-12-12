@@ -35,12 +35,14 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <HeroSection />
-      <LowerSection />
-      <WhatWeDoSection />
-      <CreationsSection />
-      <TestimonialsSection />
-      <ContactForm />
+      <main id="main-content">
+        <HeroSection />
+        <LowerSection />
+        <WhatWeDoSection />
+        <CreationsSection />
+        <TestimonialsSection />
+        <ContactForm />
+      </main>
       <Footer />
     </div>
   );

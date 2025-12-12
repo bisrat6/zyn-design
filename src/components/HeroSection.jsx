@@ -12,7 +12,7 @@ function HeroSection() {
       <div className="hero-content">
         <HeroBox className={"hero-left"} heroDescription={heroTextLeft}>
           <div className="brand-name">
-            <img src={ZynLogo} alt="ZYN" />
+            <img src={ZynLogo} alt="ZYN Interior Design - Luxury Interior Design Services in Addis Ababa, Ethiopia" />
           </div>
         </HeroBox>
         <HeroBox className={"hero-right"} heroDescription={heroTextRight}>
@@ -35,7 +35,7 @@ function HeroBox({ children, className, heroDescription }) {
 
       <p className="hero-description">{heroDescription}</p>
 
-      {isLeft && <div className="headline-line1">Crafting Timeless Luxury</div>}
+      {isLeft && <h1 className="headline-line1">Crafting Timeless Luxury</h1>}
 
       {isRight && children}
     </div>

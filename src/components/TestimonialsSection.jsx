@@ -67,21 +67,23 @@ function TestimonialsSection() {
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="testimonial-card">
+            <article className="testimonial-card" itemScope itemType="https://schema.org/Review">
               <div className="testimonial-header">
                 <img
                   src={item.img}
-                  alt={item.name}
+                  alt={`${item.name} - ${item.role} testimonial for ZYN Interior Design`}
                   className="testimonial-img"
                 />
-                <div className="testimonial-company">{item.company}</div>
+                <div className="testimonial-company" itemProp="itemReviewed" itemScope itemType="https://schema.org/Service">
+                  <span itemProp="name">{item.company}</span>
+                </div>
               </div>
-              <p className="testimonial-text">”{item.text}”</p>
-              <div className="testimonial-footer">
-                <span className="testimonial-name">{item.name}</span>
-                <span className="testimonial-role">{item.role}</span>
+              <p className="testimonial-text" itemProp="reviewBody">"{item.text}"</p>
+              <div className="testimonial-footer" itemProp="author" itemScope itemType="https://schema.org/Person">
+                <span className="testimonial-name" itemProp="name">{item.name}</span>
+                <span className="testimonial-role" itemProp="jobTitle">{item.role}</span>
               </div>
-            </div>
+            </article>
           </SwiperSlide>
         ))}
       </Swiper>

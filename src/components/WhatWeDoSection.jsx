@@ -34,8 +34,8 @@ function WhatWeDoSection() {
         </a>
       </div>
       <div className="what-right">
-        {cards.map((card) => (
-          <WhatCard title={card.title} text={card.text} />
+        {cards.map((card, index) => (
+          <WhatCard key={index} title={card.title} text={card.text} />
         ))}
       </div>
     </section>

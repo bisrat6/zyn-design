@@ -19,7 +19,7 @@ function ContactForm() {
         </div>
         <div className="contact-info-section">
           <ContactInfo contactInfo={"yohaniswendu1234@gmail.com"}>
-            <img className="icon" src={MailSvg} alt="e-mail" />
+            <img className="icon" src={MailSvg} alt="Email icon - Contact ZYN Interior Design" />
           </ContactInfo>
           <ContactInfo contactInfo={" Addis Ababa, Ethiopia"}>
             <svg
